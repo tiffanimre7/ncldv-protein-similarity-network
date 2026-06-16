@@ -55,6 +55,10 @@ The core Python dependencies are listed in `environment/requirements.txt`.
 ## Reproduce Workflow
 
 ```bash
+# Upstream HPC step on LiSC:
+sbatch scripts/00_run_hpc_alignments.sh
+
+# Downstream local analysis:
 python -m venv .venv
 pip install -r environment/requirements.txt
 python scripts/01_standardize_alignments.py
