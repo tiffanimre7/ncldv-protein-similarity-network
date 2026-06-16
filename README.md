@@ -52,6 +52,28 @@ The workflow is implemented as a sequence of numbered scripts:
 
 The core Python dependencies are listed in `environment/requirements.txt`.
 
+## Reproduce Workflow
+
+```bash
+python -m venv .venv
+pip install -r environment/requirements.txt
+python scripts/01_standardize_alignments.py
+python scripts/02_build_edge_tables.py
+python scripts/03_network_summary_statistics.py
+python scripts/04_integrate_tool_support.py
+python scripts/05_integrated_network_summary.py
+python scripts/06_export_consensus_and_cytoscape.py
+python scripts/07_make_report_tables_and_figures.py
+```
+
+### Upstream HPC alignment step
+
+The initial all-vs-all protein searches were executed on the LiSC cluster using:
+
+```bash
+sbatch scripts/00_run_hpc_alignments.sh
+```
+
 ## Suggested repository layout
 
 ```text
