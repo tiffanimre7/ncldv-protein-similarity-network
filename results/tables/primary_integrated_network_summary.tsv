@@ -1,0 +1,4 @@
+threshold	network_filter	nodes_with_at_least_one_edge	edges	average_degree	connected_components	largest_component_size	largest_component_fraction	median_degree	max_degree	median_pident_max	median_align_len_max	median_bitscore_max
+evalue_1e-5	all_edges	44099	1223039	55.467879090228806	3289	22437	0.5087870473253362	15.0	1333	32.479	254.0	83.0
+evalue_1e-5	consensus_2plus	43276	999485	46.19119142249746	3862	13406	0.3097790923375543	13.0	1180	34.58	264.0	101.0
+evalue_1e-5	consensus_3tools	42518	735449	34.59471282750835	4242	6592	0.1550402182605014	12.0	654	38.911	284.0	139.0
