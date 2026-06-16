@@ -1,0 +1,24 @@
+# Raw alignment outputs
+*.m8
+*.out
+*.err
+*.time.txt
+
+# Large processed data
+data/processed/
+data/edges/
+data/cytoscape/
+data/quality_checks/
+
+# Temporary files
+tmp/
+__pycache__/
+*.pyc
+
+# Archives
+*.zip
+*.tar.gz
+
+# OS/editor files
+.DS_Store
+.vscode/
