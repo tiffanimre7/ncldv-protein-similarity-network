@@ -68,11 +68,9 @@ python scripts/07_make_report_tables_and_figures.py
 
 ### Upstream HPC alignment step
 
-The initial all-vs-all protein searches were executed on the LiSC cluster using:
+The upstream all-vs-all alignment step was run on the LiSC cluster using `scripts/00_run_hpc_alignments.sh`.
 
-```bash
-sbatch scripts/00_run_hpc_alignments.sh
-```
+This script executes BLASTP, SWIPE and MMseqs2, removes self-hits, records runtime statistics and writes the final `.m8` files used for downstream analysis. Large raw alignment outputs are not included in this repository because of file size constraints.
 
 ## Suggested repository layout
 
